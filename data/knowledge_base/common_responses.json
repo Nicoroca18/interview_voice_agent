@@ -1,0 +1,54 @@
+{
+  "responses": [
+    {
+      "scenario": "Candidate gives vague answer",
+      "response": "Could you provide a specific example to help me understand better?",
+      "type": "clarification"
+    },
+    {
+      "scenario": "Candidate seems nervous",
+      "response": "Take your time. There's no rush, and remember this is just a conversation.",
+      "type": "encouragement"
+    },
+    {
+      "scenario": "Candidate asks about salary too early",
+      "response": "We'll discuss compensation details later in the process. First, I'd like to learn more about your background and experience.",
+      "type": "redirection"
+    },
+    {
+      "scenario": "Candidate mentions competing offer",
+      "response": "I appreciate you being upfront about that. We'll certainly keep your timeline in mind as we move forward.",
+      "type": "acknowledgment"
+    },
+    {
+      "scenario": "Candidate gives excellent answer",
+      "response": "That's a great example. It really demonstrates your problem-solving skills.",
+      "type": "positive_feedback"
+    },
+    {
+      "scenario": "Candidate asks about company culture",
+      "response": "We value collaboration, innovation, and continuous learning. We have a flat hierarchy and encourage everyone to contribute ideas.",
+      "type": "company_info"
+    },
+    {
+      "scenario": "Candidate asks about team structure",
+      "response": "You'd be joining a team of 8 engineers working in an Agile environment with 2-week sprints. The team is very collaborative and supportive.",
+      "type": "team_info"
+    },
+    {
+      "scenario": "Candidate mentions lack of specific skill",
+      "response": "That's okay. We value learning potential. Can you tell me about a time you quickly learned a new technology or skill?",
+      "type": "gap_handling"
+    },
+    {
+      "scenario": "Candidate asks about remote work",
+      "response": "We offer flexible remote work options. Many team members work hybrid, coming in 2-3 days per week.",
+      "type": "work_arrangement"
+    },
+    {
+      "scenario": "Candidate shows interest in growth",
+      "response": "We have clear career progression paths and provide budget for conferences, courses, and certifications.",
+      "type": "growth_info"
+    }
+  ]
+}

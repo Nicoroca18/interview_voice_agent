@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "Can you tell me about your most recent position and your main responsibilities?",
+      "category": "experience",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What programming languages and technologies are you most proficient in?",
+      "category": "technical_skills",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Describe a challenging technical problem you've solved recently. What was your approach?",
+      "category": "technical_skills",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you stay updated with the latest developments in technology?",
+      "category": "background",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Tell me about a time when you had to work with a difficult team member. How did you handle it?",
+      "category": "behavioral",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What interests you about this position and our company?",
+      "category": "motivation",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Can you describe your experience with Agile/Scrum methodologies?",
+      "category": "technical_skills",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's your preferred work environment - remote, hybrid, or in-office?",
+      "category": "work_preferences",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Tell me about a project you're particularly proud of. What was your role?",
+      "category": "experience",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you prioritize tasks when you have multiple deadlines?",
+      "category": "behavioral",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are your salary expectations for this role?",
+      "category": "logistics",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When would you be available to start if we move forward?",
+      "category": "logistics",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Have you had experience mentoring junior developers?",
+      "category": "experience",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Describe your testing philosophy and experience with different testing methodologies.",
+      "category": "technical_skills",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle receiving critical feedback on your work?",
+      "category": "behavioral",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's your experience with cloud platforms like AWS, Azure, or GCP?",
+      "category": "technical_skills",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Tell me about a time you failed. What did you learn from it?",
+      "category": "behavioral",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Do you have any questions for me about the role or the company?",
+      "category": "closing",
+      "difficulty": "easy"
+    }
+  ]
+}

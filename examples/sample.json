@@ -1,0 +1,27 @@
+{
+  "example_interview": {
+    "candidate_name": "Sarah Chen",
+    "years_of_experience": 6,
+    "technical_skills": ["Python", "JavaScript", "React", "AWS"],
+    "expected_salary_range": "$140,000 - $165,000",
+    "availability": "3 weeks",
+    "conversation_sample": [
+      {
+        "role": "assistant",
+        "content": "Hello! I'm TechRecruiter AI. Could you tell me your name?"
+      },
+      {
+        "role": "user",
+        "content": "Hi! My name is Sarah Chen."
+      },
+      {
+        "role": "assistant",
+        "content": "Nice to meet you, Sarah! How many years of professional experience do you have?"
+      },
+      {
+        "role": "user",
+        "content": "I have 6 years of experience in software development."
+      }
+    ]
+  }
+}
