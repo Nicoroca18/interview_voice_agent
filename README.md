@@ -73,13 +73,15 @@ mkdir -p data/conversations data/summaries data/knowledge_base
 ```
 
 Run test:
+
 ```
 python main_voice.py --test-only
 ```
 
 Run main version:
+
 ```
-python main_voice.py"
+python main_voice.py
 ```
 
 ---
