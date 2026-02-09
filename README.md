@@ -1,47 +1,179 @@
-# Interview Agent
+# Intelligent Interview Agent
 
-Conversational AI system for conducting technical interviews. Supports voice and text interactions with automatic data extraction and candidate assessment.
+Conversational AI system that conducts short structured interviews using text or voice, extracts key information, and generates a final assessment report. The project demonstrates LLM integration, conversation management, structured data extraction, and production-style error handling.
 
-## Quick Start
+---
 
-```bash
-python -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-# Add ANTHROPIC_API_KEY to .env
-python main_voice.py --test-only  # Test audio
-python main_voice.py              # Start interview
+## Overview
+
+The agent simulates an interviewer who gathers candidate information through a multi-turn conversation. It maintains context, validates inputs, extracts structured fields, and stores results in JSON format.
+
+Core capabilities:
+
+- Natural multi-turn conversation
+- Structured data extraction
+- Conversation memory
+- Automatic summary generation
+- Sentiment and recommendation assessment
+- Voice interface (Whisper STT + TTS)
+- Persistent structured storage
+- Graceful error handling
+
+---
+
+## Architecture
+
+```
+User (Voice/Text)
+   → VoiceHandler (STT/TTS)
+   → InterviewAgent (state manager)
+   → LLM prompt engine
+   → Structured extraction
+   → JSON storage
 ```
 
-## Features
+Key components:
 
-- Voice interviews with Whisper STT and customizable TTS
-- Structured data extraction to JSON
-- RAG-based intelligent questioning
-- Sentiment analysis and red flag detection
-- Multi-language support (EN/ES/FR/DE)
+**InterviewAgent**
+- Controls conversation lifecycle
+- Maintains context
+- Extracts structured data
+- Generates final report
+
+**VoiceHandler**
+- Speech transcription
+- Text-to-speech output
+- Audio validation and recovery
+
+**Storage Layer**
+- Conversation logs
+- Extracted metadata
+- Final summary
+
+The modular design supports scalability, multi-language extension, RAG integration, or API deployment.
+
+---
+
+## Setup
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+```
+
+Add API keys to `.env`:
+
+```
+ANTHROPIC_API_KEY=your_key
+OPENAI_API_KEY=optional
+```
+
+---
 
 ## Usage
 
+Text interview:
+
 ```bash
-python main.py              # Text mode
-python main_voice.py        # Voice mode
+python main.py
 ```
 
-Voice options:
+Voice interview:
+
 ```bash
---tts gtts              # Free TTS
---tts openai            # Premium TTS (requires OPENAI_API_KEY)
---whisper-model small   # Better accuracy
---test-only             # Test audio setup only
+python main_voice.py
 ```
+
+Options:
+
+```bash
+--tts gtts | openai
+--whisper-model tiny/base/small/medium/large
+--test-only
+--no-audio-test
+```
+
+---
 
 ## Output
 
-- `data/conversations/` - Interview data (JSON)
-- `data/summaries/` - Text summaries
+Each interview generates:
+
+- Full transcript
+- Extracted structured fields
+- Candidate metadata
+- Summary + assessment
+
+Stored in:
+
+```
+data/conversations/
+data/summaries/
+```
+
+JSON format enables analytics and downstream automation.
+
+---
+
+## Conversation Flow
+
+1. Agent introduces interview
+2. Collects structured information
+3. Validates and clarifies inputs
+4. Maintains context across turns
+5. Detects exit intent
+6. Generates final report
+7. Saves structured output
+
+Handles silence, invalid input, interruptions, and early termination safely.
+
+---
+
+## Design Decisions
+
+- Prompt-controlled structured extraction
+- State-driven conversation management
+- Defensive error handling
+- Modular architecture
+- JSON-first persistence
+- Voice abstraction layer
+
+The system is built to evolve into a web service, API endpoint, or multi-user conversational platform.
+
+---
+
+## Potential Improvements
+
+- RAG knowledge base integration
+- Web interface
+- Real-time streaming transcription
+- Multi-language auto-detection
+- Candidate scoring models
+- Analytics dashboard
+- Containerized deployment
+- Multi-session concurrency
+
+---
+
+## Sample Output
+
+```json
+{
+  "candidate_name": "Jane Doe",
+  "years_of_experience": 4,
+  "skills": ["Python", "Cloud"],
+  "recommendation": "Recommended",
+  "sentiment": "Positive"
+}
+```
+
+---
 
 ## Requirements
 
-Python 3.9+, microphone/speakers for voice mode
-
+- Python 3.9+
+- Microphone & speakers (voice mode)
+- Internet connection
+- Configured API keys
