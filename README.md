@@ -165,7 +165,6 @@ The system is built to evolve into a web service, API endpoint, or multi-user co
 
 ## Potential Improvements
 
-- RAG knowledge base integration
 - Web interface
 - Real-time streaming transcription
 - Multi-language auto-detection
