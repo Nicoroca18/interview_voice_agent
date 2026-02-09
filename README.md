@@ -68,7 +68,12 @@ Add API keys to `.env`:
 ```
 ANTHROPIC_API_KEY=your_key
 OPENAI_API_KEY=optional
+```
 
+
+Create data folders:
+
+```
 mkdir -p data/conversations data/summaries data/knowledge_base
 ```
 
