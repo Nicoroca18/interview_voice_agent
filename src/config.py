@@ -25,7 +25,7 @@ for directory in [CONVERSATIONS_DIR, SUMMARIES_DIR, KNOWLEDGE_BASE_DIR]:
 
 # Agent Configuration
 AGENT_NAME = os.getenv("AGENT_NAME", "Julia")
-COMPANY_NAME = os.getenv("COMPANY_NAME", "Orbio AI")
+COMPANY_NAME = os.getenv("COMPANY_NAME", "Orbio")
 POSITION = os.getenv("POSITION", "Software Engineer")
 
 # Feature Flags
