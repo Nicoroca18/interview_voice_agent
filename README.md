@@ -68,6 +68,18 @@ Add API keys to `.env`:
 ```
 ANTHROPIC_API_KEY=your_key
 OPENAI_API_KEY=optional
+
+mkdir -p data/conversations data/summaries data/knowledge_base
+```
+
+Run test:
+```
+python main_voice.py --test-only
+```
+
+Run main version:
+```
+python main_voice.py"
 ```
 
 ---
