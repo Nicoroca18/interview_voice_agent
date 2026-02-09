@@ -1,4 +1,4 @@
-# Intelligent Interview Agent
+# Voice Interview Agent
 
 Conversational AI system that conducts short structured interviews using text or voice, extracts key information, and generates a final assessment report. The project demonstrates LLM integration, conversation management, structured data extraction, and production-style error handling.
 
@@ -50,7 +50,7 @@ Key components:
 - Extracted metadata
 - Final summary
 
-The modular design supports scalability, multi-language extension, RAG integration, or API deployment.
+The modular design supports scalability, multi-language extension, RAG integration, and API deployment.
 
 ---
 
