@@ -17,7 +17,7 @@ class ConversationManager:
         """
         self.max_history = max_history
         self.conversation_history: List[Dict[str, str]] = []
-        self.metadata: Dict[str, Any] = {
+        self.metadata: Dict[str, Any] = { 
             "start_time": datetime.now().isoformat(),
             "current_stage": "introduction",
             "information_collected": {},
