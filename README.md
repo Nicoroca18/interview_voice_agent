@@ -28,7 +28,7 @@ User (Voice/Text)
    → VoiceHandler (STT/TTS)
    → InterviewAgent (state manager)
    → LLM prompt engine
-   → Structured extraction
+   → Structured extraction 
    → JSON storage
 ```
 
