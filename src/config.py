@@ -22,7 +22,7 @@ KNOWLEDGE_BASE_DIR = DATA_DIR / "knowledge_base"
 # Create directories if they don't exist
 for directory in [CONVERSATIONS_DIR, SUMMARIES_DIR, KNOWLEDGE_BASE_DIR]:
     directory.mkdir(parents=True, exist_ok=True)
-
+ 
 # Agent Configuration
 AGENT_NAME = os.getenv("AGENT_NAME", "Julia")
 COMPANY_NAME = os.getenv("COMPANY_NAME", "Orbio")
