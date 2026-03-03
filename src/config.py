@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# API Configuration
+# API Configuration 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 MODEL_NAME = os.getenv("MODEL_NAME", "claude-sonnet-4-20250514")
 
