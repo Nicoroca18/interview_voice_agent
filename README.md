@@ -111,7 +111,7 @@ Options:
 --tts gtts | openai
 --whisper-model tiny/base/small/medium/large
 --test-only
---no-audio-test
+--no-audio-test 
 ```
 
 ---
