@@ -14,7 +14,7 @@ MODEL_NAME = os.getenv("MODEL_NAME", "claude-sonnet-4-20250514")
 
 # Directories
 BASE_DIR = Path(__file__).parent.parent
-DATA_DIR = BASE_DIR / "data"
+DATA_DIR = BASE_DIR / "data" 
 CONVERSATIONS_DIR = DATA_DIR / "conversations"
 SUMMARIES_DIR = DATA_DIR / "summaries"
 KNOWLEDGE_BASE_DIR = DATA_DIR / "knowledge_base"
